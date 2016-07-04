@@ -25,7 +25,7 @@ public class CustomerController {
 	@RequestMapping(value="/context")
 	public ModelAndView process(HttpServletRequest request,Model model){
 		
-		String param = request.getParameter("name");
+		String param = request.getParameter("na);
 		System.out.println(param);
 		model.addAttribute("param", param);
 		return new ModelAndView("context");
