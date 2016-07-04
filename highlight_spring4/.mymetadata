@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="highlight_spring4"
+  id="myeclipse.1467276027810"
+  context-root="/highlight_spring4"
+  j2ee-spec="1.7"
+  archive="highlight_spring4.war">
+  <attributes>
+    <attribute name="webrootdir" value="src/main/webapp" />
+  </attributes>
+</project-module>
+
