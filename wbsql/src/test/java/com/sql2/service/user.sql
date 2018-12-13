@@ -1,0 +1,1 @@
+INSERT INTO 'user'(NAME ) VALUES ('lisi')

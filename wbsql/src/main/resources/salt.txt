@@ -1,0 +1,1 @@
+mobile.encrypt.enable=true

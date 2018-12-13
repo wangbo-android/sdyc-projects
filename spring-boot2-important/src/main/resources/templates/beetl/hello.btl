@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Beetl</title>
+</head>
+<body>
+    <h1>Hello Beetl</h1>
+    <h2>${user.name}</h2>
+    @ var salary = user.age*2;
+    <h3>${salary}</h3>
+    @ var a = 0,b = "你好",d = true;
+    @ var list = [1,2,3,4];
+    @ var map = {"name":"wangbo","age":30};
+    <h3>${list}</h3>
+    @ var ac = 1;
+    @ var template = {
+        <h4>${ac}</h4>
+    @ };
+    ${template}
+</body>
+</html>

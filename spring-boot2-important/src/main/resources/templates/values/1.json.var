@@ -1,0 +1,2 @@
+var name = "wangbo"
+var json = ["name":name]

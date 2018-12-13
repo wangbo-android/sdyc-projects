@@ -1,0 +1,3 @@
+@ layout("/beetl/layout.btl",{title:'主题'}){
+    <span>Hello,this is main part</span>
+@ };

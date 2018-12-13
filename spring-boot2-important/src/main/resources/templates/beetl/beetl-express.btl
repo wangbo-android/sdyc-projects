@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beetl Express</title>
+</head>
+<body>
+    @ var b = 1;
+    @ var e = (b + 12)*3,c=12/5;
+    @ var a = 12435454654645.4324324h;
+    @ var bb = 343434.0000001h;
+    <h1>${a * b} ${a / b}</h1>
+
+    @ if(user.name == 'wangbo' && user.age < 40){
+
+        <span>失业</span>
+    @ };
+    @ var flag = 1;
+    <h2>${flag == 1 ? "selected" : "not selected"}</h2>
+    @ for(user in userList){
+        <span>${userLP.index}</span>
+        <span>${userLP.size}</span>
+        <span>${userLP.first}</span>
+        <span>${userLP.last}</span>
+        <span>${userLP.even}</span>
+        <span>${userLP.odd}</span>
+        <span>${user.name}</span>
+        <span>${user.age}</span>
+    @ };
+    @ var data = ["wangbo","zhangsan","lisi"];
+    @ for(item in data){
+        <span>${item}</span>
+    @ }elsefor{
+        <h2>无数据</h2>
+    @ };
+    @ var dataList = null;
+    @ for(dl in dataList!){
+
+    @ };
+
+    <h1>${date(),dateFormat="yyyy-MM-dd HH:mm:ss"}</h1>
+    <h1>${date(),dateFormat}</h1>
+    <h1>${date(),"yyyy-MM-dd HH:mm:ss"}</h1>
+    <h1>${@userList.size()}</h1>
+    <#footer style="simple" />
+    <#input value="wangbo" />
+    <h1>${student.name!"死丢扥次"}</h1>
+    <h1>${print("hello my friend")}</h1>
+    <h2>${io.myPrint("this is my print")}</h2>
+    <h1>
+        ${"<script>alert(0)</script>",xxs}
+    </h1>
+    <h1>
+        <#myTag attr="hello"></#myTag>
+    </h1>
+    <div>
+        <#varTag type="1" var="user,index">
+            <h1>
+                ${index}  ${user.name}
+            </h1>
+        </#varTag>
+    </div>
+    @ layout("/beetl/layout.html",{"title":"测试页面"}){
+        <span>这是正文</span>
+    @ }
+    @ var jsPart = {
+        <script src="" />
+        <script src="" />
+    @ };
+    @ var bodyPart = {
+        <span></span>
+    @ };
+
+    @ include("/beetl/sub.btl",{"jsPart":jsPart,"bodyPart":bodyPart}){}
+</body>
+</html>
